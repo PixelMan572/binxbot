@@ -1,12 +1,12 @@
 module.exports = {
     name: 'ping',
     description: 'Pong!',
-    // devOnly: Boolean
-    // testOnly: Boolean,
+    // devOnly: Boolean,
+    // testOnly: true,
     // options: Object[],
     // deleted: Boolean,
-
+  
     callback: (client, interaction) => {
-        interaction.reply(`Pong! Replied in ${client.ws.ping}ms!`);
+      interaction.reply(`Pong! ${client.ws.ping}ms`);
     },
-};
+  };
